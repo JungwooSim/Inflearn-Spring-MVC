@@ -31,3 +31,10 @@ request.getSession(create: true)
 
 ### HTTP 요청 데이터 - 개요
 HTTP 강의 들었던 것 참고
+
+**HTTP 요청 데이터 - POST HTML Form**
+
+특징
+- content-type: application/x-www-form-urlencoded
+    - GET에서 살펴본 쿼리 파리미터 형식과 같다. 그렇기 **때문에 쿼리 파라미터 조회 메서드를 그대로 사용하면 된다.**
+- 메시디 바디에서 쿼리 파라미터 형식으로 데이터를 전달. usename=hello&age=20
