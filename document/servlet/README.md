@@ -47,3 +47,15 @@ HTTP message body 에 데이터를 직접 담아서 요청
 - POST, PUT, PATCH
 
 HTTP 메시지 바디의 데이터를 InputStream을 사용해서 직접 읽을 수 있다.
+
+**API 메시지 바디 - JSON**
+
+JSON 형식 전송
+- content-type: application/json
+- message body : {"username" : "hello", "age" : 20}
+- 결과 : messageBody = {"username" : "hello", "age" : 20}
+
+```
+JSON 결과를 파싱해서 사용할 수 있는 자바 객체로 변환하려면 Jackson, Gson 같은 JSON 변환 라이브러리를 추가하여 사용해야 한다.
+스프링 부트로 Spring MVC를 선택하면 기본으로 Jackson 라이브러리 (ObjectMapper)를 함께 제공한다.
+```
