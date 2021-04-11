@@ -25,4 +25,4 @@ CSR (client-side rendering)
 - 일반 MVC 쓰레드 모델도 충분히 빠르다
 - 실무에서 아직 많이 사용하지 않음
 
-### 02. 서블릿(<a href="https://github.com/JungwooSim/Object/tree/main/document/servlet" target="_blank">링크</a>)
+### 02. 서블릿(<a href="https://github.com/JungwooSim/Inflearn-Spring-MVC/tree/master/document/servlet" target="_blank">링크</a>)
