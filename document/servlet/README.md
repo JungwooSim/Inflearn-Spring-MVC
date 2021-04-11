@@ -28,3 +28,6 @@
 ```
 request.getSession(create: true)
 ```
+
+### HTTP 요청 데이터 - 개요
+HTTP 강의 들었던 것 참고
