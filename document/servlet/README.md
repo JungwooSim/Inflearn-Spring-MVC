@@ -59,3 +59,11 @@ JSON 형식 전송
 JSON 결과를 파싱해서 사용할 수 있는 자바 객체로 변환하려면 Jackson, Gson 같은 JSON 변환 라이브러리를 추가하여 사용해야 한다.
 스프링 부트로 Spring MVC를 선택하면 기본으로 Jackson 라이브러리 (ObjectMapper)를 함께 제공한다.
 ```
+
+**HTTP 응답 데이터 - API JSON**
+
+```
+content-type: application/json 는 스펙상 utf-8 형식을 사용하도록 정의되어 있다.
+application/json 이라고만 사용하면 된다.
+application/json;charset=utf-8 라고 전달하는 것은 의미없는 파라미터를 추가한 것이다.
+```
