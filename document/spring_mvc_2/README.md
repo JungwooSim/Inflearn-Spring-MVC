@@ -58,3 +58,13 @@ HTTP 메시지 바디 정보를 편리하게 조회 가능.<br>
 
 `@ResponseBody` <br>
 응답 결과를 HTTP 메시지 바디에 직접 담아서 전달할 수 있다. 이 경우 view 를 사용하지 않는다.
+
+### 10. HTTP 요청 메시지 - JSON
+
+문자로 된 JSON 데이터를 Jackson 라이브러리인 ObjectMapper 를 사용해서 객체로 변환할 수 있다.
+
+`@RequestBody`, `HttpEntity`<br>
+HTTP 메시지 컨버터가 HTTP 메시지 바디의 내용을 우리가 원하는 문자나 객체 등으로 변환해준다.
+
+`@RequestBody` 는 생략이 불가능하다.<br>
+주의할점은 HTTP 요청시에 content-type 이 application/json 인지 확인해야한다. (HTTP 메시지 컨터가 동작하기 위해서는 content-type을 체크한다)
