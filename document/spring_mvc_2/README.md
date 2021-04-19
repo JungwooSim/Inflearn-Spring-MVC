@@ -91,3 +91,21 @@ HTTP 메시지 컨버터가 HTTP 메시지 바디의 내용을 우리가 원하�
 **뷰 템플릿**
 
 뷰 템플릿을 거쳐 HTML 이 생성되고, 뷰가 응답을 만들어서 전달한다.
+
+### 12. HTTP 메시지 컨버터
+
+<img src="/document/spring_mvc_2/img/1.png" width="500px;" />
+
+`@ResponseBody` 사용<br>
+- HTTP 의 BODY에 문자 내용을 직접 반환
+- `viewResolver` 대신에 `HttpMessageConverter` 이 동작
+- 기본 문자처리 : `StringHttpMessageConverter`
+- 기본 객체처리 : `MappingJackson2HttpMessageConverter`
+- byte 처리 등등 기타 여러 HttpMessageConverter 가 기본으로 등록
+
+> **응답**의 경우 클라이언트의 HTTP Accept 해더와 서버의 컨트롤러 반환 타입 정보 둘을 조합해서 `HttpMessageConverter` 가 선택된다.
+
+**스프링 MVC 는 다음의 경우 HTTP 메시지 컨버터를 적용**
+
+- HTTP 요청 : `@RequestBody` , `HttpEntity(RequestEntity)`
+- HTTP 응답 : `@RequestBody`, `HttpEntity(RequestEntity)`
