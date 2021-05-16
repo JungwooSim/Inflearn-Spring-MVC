@@ -1,6 +1,5 @@
 # 인프런 - 스프링 MVC 1편 - 백엔드 웹 개발 핵심 기술 (김영한)
 
-
 ### SSR, CSR
 SSR (server-side rendering)
 - HTML 최종 결과를 서버에서 만들어서 웹 브라우저에 전달
@@ -29,3 +28,4 @@ CSR (client-side rendering)
 ### 03. 서블릿, JSP, MVC 패턴(<a href="https://github.com/JungwooSim/Inflearn-Spring-MVC/tree/master/document/servlet_jsp_mvc-pattern" target="_blank">링크</a>)
 ### 04. MVC 프레임워크 만들기(<a href="https://github.com/JungwooSim/Inflearn-Spring-MVC/tree/master/document/mvc_framework" target="_blank">링크</a>)
 ### 05. Spring MVC(<a href="https://github.com/JungwooSim/Inflearn-Spring-MVC/tree/master/document/spring_mvc" target="_blank">링크</a>)
+### 06. Spring MVC - 기본 기능(<a href="https://github.com/JungwooSim/Inflearn-Spring-MVC/tree/master/document/spring_mvc_2" target="_blank">링크</a>)
