@@ -32,6 +32,11 @@ public class BasicItemController {
         return "basic/item";
     }
 
+    @GetMapping("/add")
+    public String addForm() {
+        return "basic/addForm";
+    }
+
     /**
      * 태스트용 데이터 추가
      * @PostConstruct 어노테이션은 해당 빈의 의존관계가 모두 주입되고 나면 초기화 용도로 호출
